@@ -41,7 +41,11 @@
 	font-weight: 600;
 }
 
-
+/* logo */
+.main-logo img{
+	width: 60px;
+}
+/* end */
 
 /* token-phase */ 
 .hero-token-phase {
