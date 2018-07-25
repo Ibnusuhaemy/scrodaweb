@@ -1,0 +1,214 @@
+/* Scroda Custom CSS */
+
+/* Utility */
+.t-align-center {
+	text-align: center;
+}
+.pb-300px {
+	padding-bottom: 300px;
+}
+.pt-100px {
+	padding-top: 100px;
+}
+.pb-200px {
+	padding-bottom: 200px;
+}
+.pb-100px {
+	padding-bottom: 200px;
+}
+.mb-25px {
+	margin-bottom: 25px;
+}
+.mb-15px {
+	margin-bottom: 15px;
+}
+.mb-5px {
+	margin-bottom: 5px;
+}
+.text-purple {
+	color: rgb(122,4,255);
+}
+.text-blue {
+	color: #304ffe;
+}
+.text-white {
+	color: #fff;
+}
+.fs-30px {
+	font-size: 30px;
+}
+.fw-600 {
+	font-weight: 600;
+}
+
+
+
+/* token-phase */ 
+.hero-token-phase {
+	padding: 30px;
+	padding-top: 200px;
+}
+@media screen and (max-width: 1200px){
+	.hero-token-phase {
+		padding: 0;
+		padding-top: 200px;
+	}
+}
+@media screen and (max-width: 768px){
+	.hero-token-phase {
+		padding-top: 30px;
+	}
+}
+.token-phase-wrapper {
+	border-radius: 5px;
+	padding: 30px;
+	background-image: -moz-linear-gradient( 0deg, #1e97ff 0%, #2cc0fe 100%);
+    background-image: -webkit-linear-gradient( 0deg, #1e97ff 0%, #2cc0fe 100%);
+    background-image: -ms-linear-gradient( 0deg, #1e97ff 0%, #2cc0fe 100%);
+}
+.token-phase-wrapper .token-title {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+}
+/* end */
+
+.token-phase-wrapper a {
+	font-weight: 600;
+}
+
+
+/* expiry-token */
+.expiry-time {
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	color: #fff;
+	margin-bottom: 60px;
+}
+.expiry-item {
+	width: 70px;
+	height: 60px;
+	font-weight: 600;
+}
+.expiry-item .date {
+	padding: 10px 15px;
+	border-radius: 8px;
+	background: rgb(122,4,255);
+	font-size: 36px;
+}
+/* end */
+
+/* token-cap indicators */
+.token-cap {
+	display: flex;
+	color: #fff;
+	font-weight: 600;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+/* end */
+
+/* token-cap bar */
+.cap-bar {
+	height: 15px;
+	width: 80%;
+	position: relative;
+	margin: 0 auto;
+	background: #37cbfe;
+	border-radius: 50px;
+	margin-bottom: 20px;
+}
+.filled-cap {
+	height: 15px;
+	position: absolute;
+	background-image: -moz-linear-gradient( 0deg, rgb(122,4,255) 0%, rgb(48,79,254) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(122,4,255) 0%, rgb(48,79,254) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(122,4,255) 0%, rgb(48,79,254) 100%);
+	border-radius: 50px;
+}
+/* end */
+
+/* price-info */
+.price-info {
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.price-info span {
+	padding-left: 20px;
+}
+/* end */
+
+
+
+/* how it work */
+.sc-h-it-work h2 {
+	padding: 0 200px;
+}
+.sc-h-it-work .crypcash-content p {
+	padding: 0 200px;
+	color: rgba(255,255,255,0.8);
+}
+@media screen and (max-width: 768px) {
+	.sc-h-it-work h2 {
+		padding: 0;
+	}
+	.sc-h-it-work .crypcash-content p {
+		padding: 0;
+		color: rgba(255,255,255,0.8);
+	}
+}
+/* end */
+
+
+/* faq-area */
+.homepage-3.faq-area.pb-300px {
+	padding-bottom: 300px;
+}
+/* end */
+
+/* work-area */
+.work_area.homepage-3.pb-100px {
+	padding-bottom: 100px;
+}
+/* end */
+
+
+/* section 3-4 */
+.scroda-exp  .crypcash-left{
+	margin-top: 0;
+}
+
+.scroda-exp .promo-video-area {
+	padding: 30px;
+	padding-top: 50px;
+
+}
+.scroda-exp .video-area-bg {
+	top: 43%;
+	left: 45%;
+}
+.scroda-exp .video-area-bg:after {
+	background: #fff;
+}
+.scroda-exp a.video-play-btn:before {
+	border: 2px solid #fff;
+}
+.scroda-exp a.video-play-btn:after {
+	border-color: transparent transparent transparent #304FFE;
+}
+
+.scroda-id {
+	position: relative;
+	padding-bottom: 200px;
+}
+.scroda-id .id-img {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.scroda-id .id-img img {
+	width: 500px;
+}
+/* end */
