@@ -41,6 +41,40 @@
 	font-weight: 600;
 }
 
+
+/* modify hero light background */
+.homepage-3.slider_area.hero-light {
+	background: #fff;
+}
+.homepage-3.slider_area.hero-light:before,
+.homepage-3.slider_area.hero-light:after {
+	background: none;
+}
+.hero-light .slider-text h2 {
+	color: #0B164E;
+}
+.hero-light .slider-text p {
+	color: rgb(122,4,255);
+}
+.header-light-scheme {
+	background: #fff;
+}
+.header-light-scheme .mainmenu ul li a {
+ 	color: #0B164E;;
+}
+.is-sticky .header-light-scheme .mainmenu ul li a {
+ 	color: #fff;;
+}
+.header-light-scheme .logo a {
+	color: #0B164E;
+}
+.is-sticky .header-light-scheme .logo a {
+	color: #fff;
+}
+/* end */
+
+
+
 /* logo */
 .main-logo img{
 	width: 60px;
