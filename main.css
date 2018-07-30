@@ -41,6 +41,22 @@
 	font-weight: 600;
 }
 
+/* hero-bg */
+.bg-hero {
+	position: absolute;
+}
+.bg-1 {
+	top: 0px;
+}
+.bg-2 {
+	right: 0;
+}
+.bg-3 {
+	left: 30%;
+	top: 150px;
+}
+/* end */
+
 
 /* modify hero light background */
 .homepage-2.slider_area.hero-light {
@@ -57,6 +73,10 @@
 	color: rgb(122,4,255);
 }
 .header-light-scheme {
+	background: #fff;
+	background: transparent;
+}
+.header-light-scheme .dropdown-nav {
 	background: #fff;
 }
 .header-light-scheme .mainmenu ul li a {
