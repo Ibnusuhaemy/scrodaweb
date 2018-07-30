@@ -5,25 +5,25 @@
 	text-align: center;
 }
 .pb-300px {
-	padding-bottom: 300px;
+	padding-bottom: 300px !important;
 }
 .pt-100px {
-	padding-top: 100px;
+	padding-top: 100px !important;
 }
 .pb-200px {
-	padding-bottom: 200px;
+	padding-bottom: 200px !important;
 }
 .pb-100px {
-	padding-bottom: 200px;
+	padding-bottom: 200px !important;
 }
 .mb-25px {
-	margin-bottom: 25px;
+	margin-bottom: 25px !important;
 }
 .mb-15px {
-	margin-bottom: 15px;
+	margin-bottom: 15px !important;
 }
 .mb-5px {
-	margin-bottom: 5px;
+	margin-bottom: 5px !important;
 }
 .text-purple {
 	color: rgb(122,4,255);
@@ -43,11 +43,11 @@
 
 
 /* modify hero light background */
-.homepage-3.slider_area.hero-light {
+.homepage-2.slider_area.hero-light {
 	background: #fff;
 }
-.homepage-3.slider_area.hero-light:before,
-.homepage-3.slider_area.hero-light:after {
+.homepage-2.slider_area.hero-light:before,
+.homepage-2.slider_area.hero-light:after {
 	background: none;
 }
 .hero-light .slider-text h2 {
@@ -186,7 +186,6 @@
 }
 .sc-h-it-work .crypcash-content p {
 	padding: 0 200px;
-	color: rgba(255,255,255,0.8);
 }
 @media screen and (max-width: 768px) {
 	.sc-h-it-work h2 {
@@ -201,19 +200,27 @@
 
 
 /* faq-area */
-.homepage-3.faq-area.pb-300px {
+.homepage-2.faq-area.pb-300px {
 	padding-bottom: 300px;
 }
 /* end */
 
 /* work-area */
-.work_area.homepage-3.pb-100px {
+.work_area.homepage-2.pb-100px {
 	padding-bottom: 100px;
+	padding-top: 0;
+}
+.work_area.homepage-2 .video-area-bg {
+	top: 45%;
+	left: calc(50% - 30px);
 }
 /* end */
 
 
 /* section 3-4 */
+.homepage-2.crypcash-area.scroda-exp {
+	background-color: #fff;
+}
 .scroda-exp  .crypcash-left{
 	margin-top: 0;
 }
@@ -237,7 +244,7 @@
 	border-color: transparent transparent transparent #304FFE;
 }
 
-.scroda-id {
+.homepage-2.crypcash-area.scroda-id {
 	position: relative;
 	padding-bottom: 200px;
 }
