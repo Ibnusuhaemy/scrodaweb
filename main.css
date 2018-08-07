@@ -10,11 +10,17 @@
 .pt-100px {
 	padding-top: 100px !important;
 }
+.pt-50px {
+	padding-top: 50px !important;
+}
 .pb-200px {
 	padding-bottom: 200px !important;
 }
 .pb-100px {
 	padding-bottom: 200px !important;
+}
+.mt-25px {
+	margin-bottom: 25px !important;
 }
 .mb-50px {
 	margin-bottom: 50px !important;
