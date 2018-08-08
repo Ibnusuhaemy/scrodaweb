@@ -17,10 +17,16 @@
 	padding-bottom: 200px !important;
 }
 .pb-100px {
-	padding-bottom: 200px !important;
+	padding-bottom: 100px !important;
+}
+.pb-50px {
+	padding-bottom: 50px !important;
 }
 .mt-25px {
-	margin-bottom: 25px !important;
+	margin-top: 25px !important;
+}
+.mt-50px {
+	margin-top: 50px !important;
 }
 .mb-50px {
 	margin-bottom: 50px !important;
@@ -33,6 +39,9 @@
 }
 .mb-5px {
 	margin-bottom: 5px !important;
+}
+.m-0 {
+	margin: 0 !important;
 }
 .text-purple {
 	color: rgb(122,4,255);
@@ -175,6 +184,9 @@
 .header-light-scheme {
 	background: #fff;
 	background: transparent;
+}
+.slider_area.hero-light {
+	min-height: 790px;
 }
 .header-light-scheme .dropdown-nav {
 	background: #fff;
