@@ -90,6 +90,44 @@
 }
 /* end */
 
+/* section bg */
+#work_area {
+	position: relative;
+}
+#work_area #work_area_bg1 ,
+#work_area #work_area_bg2 ,
+#work_area #work_area_bg3 ,
+#work_area #work_area_bg4 {
+	position: absolute;
+}
+#work_area #work_area_bg1 {
+	right: 0;
+	top: 80px;
+}
+#work_area #work_area_bg2 {
+	right: 0;
+	bottom: 15%;
+}
+#work_area #work_area_bg2 img {
+	width: 300px;
+}
+#work_area #work_area_bg3 {
+	left: 0;
+	bottom: 10%;
+}
+#work_area #work_area_bg3 img {
+	width: 300px;
+}
+#work_area #work_area_bg4 {
+	right: 0;
+	bottom: 5%;
+}
+#work_area #work_area_bg4 img {
+}
+/* end */
+
+
+
 /* custom Popup */
 .bg-popup-wrap {
 	background: rgba(0,0,0,0.8);
