@@ -270,6 +270,11 @@
 .main-logo img{
 	width: 210px;
 }
+@media screen and (max-width: 767px){
+    .main-logo img{
+        width: 110px;
+    }
+}
 /* end */
 
 /* token-phase */ 
