@@ -58,12 +58,92 @@
        </div>
    </div> -->
 
+   <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog  signup-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-title">
+                <img src="assets/img/Scroda_Cutout_v3_final-01.svg" alt="" style="width: 100px;">
+            </div>
+          </div>
+          <div class="modal-body">
+            <div>
+                <div class="bg-img" id="work_area_bg1">
+                    <img src="assets/img/section-bg/1.png" alt="">
+                </div>
+              <!-- Nav tabs -->
+              <ul class="signup-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#login" aria-controls="home" role="tab" data-toggle="tab">Log In</a></li>
+                <li role="presentation"><a href="#signup" aria-controls="profile" role="tab" data-toggle="tab">Sign Up</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="login">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-signup-modal">Submit</button>
+                    </form>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="signup">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-signup-modal">Submit</button>
+                    </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <header id="sticker" class="header-top homepage-3 header-light-scheme">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-sm-3">
                     <div class="logo main-logo">
-                        <a href="#"><img  src="assets/img/patent3.png" alt="logo" ></a>
+                        <!-- <a href="#"><img  src="assets/img/patent3.png" alt="logo" ></a> -->
+                        <a href="#"><img  src="assets/img/Scroda_Cutout_v3_final-01.svg" alt="logo" ></a>
                     </div>
                 </div>
                 <div class="col-md-10 col-sm-9">
@@ -86,7 +166,7 @@
                                         <option value="Eng">FRA</option>
                                     </select>
                                 </li>
-                               <li class="login"> <a class="sing-up" href="#">SING UP</a></li>
+                               <li class="login"> <a class="sing-up" href="#" data-toggle="modal" data-target="#myModal">SING UP</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -103,8 +183,10 @@
             <div class="bg-hero bg-2">
                 <img src="assets/img/Bg2.png" alt="" class="">
             </div>
-            <div class="bg-hero bg-3">
-                <img src="assets/img/Bg3.png" alt="" class="">
+            <div class="bg-hero-bullet">
+                <img src="assets/img/bullet1.png" alt="" class="bullet-img" id="bullet1">
+                <img src="assets/img/bullet1.png" alt="" class="bullet-img" id="bullet2">
+                <img src="assets/img/bullet1.png" alt="" class="bullet-img" id="bullet3">
             </div>
             <div class="container">
                 <div class="row">
@@ -196,6 +278,9 @@
         <div class="bg-img" id="work_area_bg3">
             <img src="assets/img/section-bg/3.png" alt="">
         </div>
+        <div class="bg-img" id="work_area_bg4">
+            <img src="assets/img/DNA.png" alt="">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -210,28 +295,25 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="single-token t-align-center">
-                        <img src="assets/img/icons/token-icon.png" alt="">
                         <div class="token-meta">
-                            <h4>Next-Generation Identification</h4>
-                            <p>Scroda births an unsurpassable true Identification framework from the use of medically advanced EEG accompanied by complex identifying biometrics. A patent pending solution born to advance all world use-cases.</p>
+                            <h4 class="t-left">Next-Generation Identification</h4>
+                            <p class="t-left">Scroda births an unsurpassable true Identification framework from the use of medically advanced EEG accompanied by complex identifying biometrics. A patent pending solution born to advance all world use-cases.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-token t-align-center">
-                        <img src="assets/img/icons/token-icon-2.png" alt="">
                         <div class="token-meta">
-                            <h4>Token Automation Exchange</h4>
-                            <p>Scroda enables and allows for every cryptocurrency to obtain the security and privacy benefits offered in Scroda through exchanging their tokens for SCR within the automated Scroda token exchange system.</p>
+                            <h4 class="t-left">Token Automation Exchange</h4>
+                            <p class="t-left">Scroda enables and allows for every cryptocurrency to obtain the security and privacy benefits offered in Scroda through exchanging their tokens for SCR within the automated Scroda token exchange system.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-token t-align-center">
-                        <img src="assets/img/icons/token-icon-3.png" alt="">
                         <div class="token-meta">
-                            <h4>True Un-Flawed Privacy</h4>
-                            <p>Scroda introduces truly unflawed privacy solutions to its infrastructure as well as SCR tokens through its patent-pending sole ledger blockchain concept.</p>
+                            <h4 class="t-left">True Un-Flawed Privacy</h4>
+                            <p class="t-left">Scroda introduces truly unflawed privacy solutions to its infrastructure as well as SCR tokens through its patent-pending sole ledger blockchain concept.</p>
                         </div>
                     </div>
                 </div>
@@ -319,7 +401,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="row">
-                            <div class="promo-video-area ">
+                            <div class="promo-video-area pt-150px">
                                 <div class="video-demo-image">
                                     <div class="overlay-grad-one">
                                         <img src="assets/img/bg-shape/home-3-vedio-bg-2.png" alt="place your img" class="img-responsive center-block">
@@ -354,7 +436,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="promo-video-area pt-50px">
+                        <div class="promo-video-area pt-150px">
                             <div class="video-demo-image">
                                 <div class="overlay-grad-one">
                                     <img src="assets/img/bg-shape/home-3-vedio-bg-2.png" alt="place your img" class="img-responsive center-block">
@@ -388,22 +470,12 @@
             </div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <div class="promo-video-area pt-25px mb-50px">
-                        <div class="video-demo-image mb-50px">
-                            <div class="overlay-grad-one">
-                                <img src="assets/img/bg-shape/home-3-vedio-bg-2.png" alt="place your img" class="img-responsive center-block">
-                            </div>
-                            <div class="video-area-bg" >
-                                <a class="mfp-iframe video-play-btn" href="https://www.youtube.com/watch?v=5SVR7x1ENm4"> </a>
-                            </div>
-                        </div>
-                    </div>
+                   <img src="assets/img/Passport_2.png" alt="">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="single-token t-align-center">
-                        <img src="assets/img/icons/token-icon.png" alt="">
                         <div class="token-meta">
                             <h4>Obtain Citizenship granted to your Scroda ID</h4>
                             <p>A user must obtain approval locally from 10 Issuance Officers after which an 80% vote is required from the Issuance Committee which ensures Issuance Officers followed all prerequisite and obtained all documentation correctly.</p>
@@ -413,7 +485,6 @@
                 </div>
                 <div class="col-md-4">
                     <div class="single-token t-align-center">
-                        <img src="assets/img/icons/token-icon-2.png" alt="">
                         <div class="token-meta">
                             <h4>Citizenship ID Card</h4>
                             <p>Contains Basic information of a user which can be used to share basic information in which is only necessecary such as when conducting business transactions, only information that needs to be shared will be shared with consent such as your age only when solely required.</p>
@@ -425,7 +496,6 @@
                 </div>
                 <div class="col-md-4">
                     <div class="single-token t-align-center">
-                        <img src="assets/img/icons/token-icon-3.png" alt="">
                         <div class="token-meta">
                             <h4>Commence Voting Stage</h4>
                             <p>Based upon Laws and Regulations in which are kept updated through the Governance of the Round Table, Scroda Citizens can partake and vote in Presidential Elections and any other voting that is allowed through the laws of the countries in which a user resides in.</p>
@@ -1546,7 +1616,7 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/preloader.js"></script>
+    <!-- <script src="assets/js/preloader.js"></script> -->
     <script src="assets/js/theme.plugins.js"></script>
     <script src="assets/js/ajax-mail.js"></script>
     <script src="assets/js/ajax-subscribe.js"></script>
