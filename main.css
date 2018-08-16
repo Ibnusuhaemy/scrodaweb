@@ -372,6 +372,17 @@
 	width: 210px;
 	width: 60px;
 }
+.main-logo {
+	width: 160px;
+	background: url('assets/img/logo-dark.png');
+	background-size: 100%;
+	height: 50px;
+}
+.sticky-wrapper.is-sticky .main-logo {
+	background: url('assets/img/logo-white.png');
+	background-size: 100%;
+	height: 50px;
+}
 .sticky-wrapper.is-sticky .main-logo{
 /*    background-color: #2e386d;*/
     background-color: transparent;
