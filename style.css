@@ -3339,6 +3339,7 @@ li.chsrt-list.diff-color-5:before {
 
 .homepage-3.homepage-4.whitepaper-area {
     background: #fff;
+    margin-bottom: 65px;
 }
 .single-document {
     float: left;
@@ -3501,7 +3502,7 @@ img.white-logo-img {
 ------------------------------------------*/
 .team-area {
     background: #0b1753;
-    padding-top: 130px;
+    padding-top: 65px;
     padding-bottom: 149px;
 }
 
@@ -3525,7 +3526,7 @@ img.white-logo-img {
     background: #1e0074;
 }
 .homepage-3.homepage-4.team-area {
-    background: #fff;
+    background: #f0f3ff;
 }
 .homepage-3 .team-img {
     float: none;

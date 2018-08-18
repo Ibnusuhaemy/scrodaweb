@@ -191,6 +191,7 @@
 /* section bg */
 #work_area {
 	position: relative;
+  overflow: hidden;
 }
 #work_area #work_area_bg1 ,
 #work_area #work_area_bg2 ,
@@ -217,7 +218,7 @@
 	width: 300px;
 }
 #work_area #work_area_bg4 {
-	right: 0;
+	right: -40px;
 	top: 0;
 }
 #work_area #work_area_bg4 img {
@@ -227,6 +228,9 @@
 
 .dna {
 	position: relative;
+}
+.why-scroda{
+/*  background: #f0f3ff;*/
 }
 
 /* custom Popup */
@@ -510,13 +514,13 @@
 .sc-h-it-work .crypcash-content.no-left p {
 	padding-left: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
 	.sc-h-it-work h2 {
 		padding: 0;
 	}
 	.sc-h-it-work .crypcash-content p {
 		padding: 0;
-		color: rgba(255,255,255,0.8);
+/*		color: rgba(255,255,255,0.8);*/
 	}
 }
 /* end */
@@ -541,7 +545,7 @@
 
 /* section 3-4 */
 .homepage-2.crypcash-area.scroda-exp {
-	background-color: #fff;
+	background-color: #f0f3ff;
 }
 .scroda-exp  .crypcash-left{
 	margin-top: 0;
@@ -550,7 +554,6 @@
 .scroda-exp .promo-video-area {
 	padding: 30px;
 	padding-top: 50px;
-
 }
 .scroda-exp .video-area-bg {
 	top: 43%;
@@ -565,10 +568,16 @@
 .scroda-exp a.video-play-btn:after {
 	border-color: transparent transparent transparent #304FFE;
 }
+@media screen and (max-width: 991px){
+  .scroda-exp .promo-video-area{
+    padding-top: 0 !important;
+  }
+}
 
 .homepage-2.crypcash-area.scroda-id {
 	position: relative;
 	padding-bottom: 150px;
+  background-color: #fff;
 }
 .scroda-id .id-img {
 	position: absolute;
