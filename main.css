@@ -258,6 +258,12 @@
 	height: 265px;
 	text-align: center;
 }
+@media screen and (max-width: 768px){
+    .pop-up-wrap{
+        width: 95%;
+        height: 350px;
+    }
+}
 .pop-up-wrap h2 {
 	font-weight: 600;
     font-family: 'Poppins', sans-serif;
@@ -292,6 +298,11 @@
     background: #304ffe;
     text-transform: capitalize;
     margin-left: -5px;
+}
+@media screen and (max-width: 768px){
+    .pop-up-wrap input[type="submit"]{
+        
+    }
 }
 .pop-up-wrap .social-links span {
 	height: 40px;

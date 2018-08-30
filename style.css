@@ -1229,8 +1229,12 @@ img.slider-logo-img {
     padding-top: 130px;
     padding-bottom: 150px;
 }
- .homepage-2.work_area {
+.homepage-2.work_area {
     background: #f1f4fe;
+}
+.homepage-2.work_area .pass-book img{
+    display: block;
+    margin: 20px auto;
 }
 
 .single-work {

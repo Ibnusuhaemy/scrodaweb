@@ -1743,10 +1743,13 @@ img.white-logo-img {
 .team-img img {
     width: 100%;
 }
-
+.social-links a{
+    display: inline-block;
+}
 .social-links span {
     font-size: 14px;
     margin-right: 10px;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
