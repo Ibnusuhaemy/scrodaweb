@@ -2022,6 +2022,7 @@ img.section-logo {
 }
 .single-token img {
     height: 67px;
+    width: auto;
 }
 .token-meta h4 {
     font-size: 20px;

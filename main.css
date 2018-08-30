@@ -232,6 +232,9 @@
 .why-scroda{
 /*  background: #f0f3ff;*/
 }
+.why-scroda .single-token{
+    text-align: left;
+}
 
 /* custom Popup */
 .bg-popup-wrap {
