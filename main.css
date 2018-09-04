@@ -234,7 +234,7 @@
 }
 .why-scroda{
 /*  background: #f0f3ff;*/
-  border: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .why-scroda .single-token{
     text-align: center;
