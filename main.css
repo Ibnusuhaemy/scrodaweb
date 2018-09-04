@@ -227,13 +227,17 @@
 
 
 .dna {
-	position: relative;
+    position: relative;
+}
+.dna .crypcash-content{
+    text-align: left;
 }
 .why-scroda{
 /*  background: #f0f3ff;*/
+  border: 1px solid #eee;
 }
 .why-scroda .single-token{
-    text-align: left;
+    text-align: center;
 }
 
 /* custom Popup */
@@ -523,10 +527,11 @@
 	padding-left: 0;
 }
 .sc-h-it-work .crypcash-content p {
-	padding: 0 200px;
+	padding: 0 150px;
 }
 .sc-h-it-work .crypcash-content.no-left p {
 	padding-left: 0;
+  padding-right: 200px;
 }
 @media screen and (max-width: 991px) {
 	.sc-h-it-work h2 {
@@ -590,7 +595,7 @@
 
 .homepage-2.crypcash-area.scroda-id {
 	position: relative;
-	padding-bottom: 150px;
+	padding-bottom: 280px;
   background-color: #fff;
 }
 .scroda-id .id-img {
