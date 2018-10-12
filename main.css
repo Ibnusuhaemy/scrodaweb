@@ -423,28 +423,23 @@
 
 
 /* logo */
-.main-logo img{
+.main-logo{
 	width: 210px;
-	width: 60px;
+	height: 60px;
 }
 .main-logo {
-	width: 160px;
-	background: url('assets/img/logo-dark.png');
-	background-size: 100%;
-	height: 50px;
-}
-.sticky-wrapper.is-sticky .main-logo {
-	background: url('assets/img/logo-white.png');
-	background-size: 100%;
-	height: 50px;
+	background-image: url('assets/img/patent-4.png');
+	background-size: cover;
+  background-repeat: no-repeat;
 }
 .sticky-wrapper.is-sticky .main-logo{
 /*    background-color: #2e386d;*/
-    background-color: transparent;
-    padding: 0;
-    margin-bottom: 5px;
-    border-radius: 4px;
-    display: inline-block;
+  background-image: url('assets/img/patent-4-dark.png');
+  background-color: transparent;
+  background-size: cover;
+  padding: 0;
+  border-radius: 4px;
+  display: inline-block;
 }
 @media screen and (max-width: 991px){
     .main-logo{
@@ -766,7 +761,7 @@
 }
 .team-member .team-photo {
 	position: relative;
-    width: 170px;
+  width: 170px;
 }
 .team-member .team-photo img {
 	border-radius: 5px;
@@ -774,28 +769,217 @@
 }
 .team-discription {
 	margin-left: 135px;
-    margin-top: 18px;
+  margin-top: 18px;
 }
 .team-discription ul {
 	padding-left: 0;
 }
 .team-member .team-discription li {
 	line-height: 1.6;
-    font-size: 1em;
-    position: relative;
-    padding-left: 16px;
-    margin-bottom: 8px;
-    list-style: none;
-    font-size: 17px;
-    color: rgb(132, 132, 164);
+  font-size: 1em;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  list-style: none;
+  font-size: 17px;
+  color: rgb(132, 132, 164);
 }
 .team-member .team-discription li:before {
 	content: "";
-    background: #5d46e8;
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    position: absolute;
-    top: 9px;
-    left: 0;
+  background: #5d46e8;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+/* Dashboard */
+.header-dashboard{
+  background: rgba(11, 22, 78, 0.95);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+.header-dashboard .mainmenu ul li a{
+  color: #fff;
+  background-color: #374071f2;
+}
+.header-dashboard .mainmenu ul li.active a,
+.header-dashboard .mainmenu ul li.active:hover a,
+.header-dashboard .mainmenu ul li:hover a{
+  background-color: #364598f2;
+}
+.header-dashboard .mainmenu ul li:not(:last-child) a{
+  margin-right: 15px;
+}
+
+.my-dashboard .form-control{
+  border-radius: 0;
+}
+.my-dashboard .input-group-addon{
+  border-radius: 0;
+  background-color: #fff;
+}
+.my-dashboard .ifum{
+  width: 45%;
+  padding-right: 10px;
+}
+.ifum .ifum-link{
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.ifum .ifum-link img{
+  width: auto;
+  height: 36px;
+}
+.ifum .ifum-group{
+  vertical-align: middle;
+  display: inline-block;
+}
+.ifum .ifum-arrow{
+  vertical-align: top;
+  display: inline-block;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.form-pay .form-pay-item{
+  padding: 10px 10px 20px 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+}
+.form-pay .input-group{
+  margin-right: 15px;
+}
+.form-pay .pay-img{
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+}
+.my-profile .btn,
+.form-pay .btn{
+  font-family: 'Poppins', sans-serif;
+  background-color: #304ffe;
+  color: #fff;
+  width: 240px;
+}
+
+.modal-dashboard .modal-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-dashboard .input-group .form-control{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.modal-dashboard .modal-body{
+  background-image: url(assets/img/section-bg/1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+}
+.form-sender .input-group-addon{
+  background-color: #24b8fd;
+  color: #fff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.form-recipient .input-group-addon{
+  background-color: #0092d6;
+  color: #fff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.my-profile-btn{
+  text-align: right;
+}
+.my-profile h2{
+  display: inline-block;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+@media all and (max-width: 1199px) and (min-width: 992px){
+  .my-dashboard .ifum{
+    width: 50%;
+  }
+  .ifum .ifum-arrow{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .form-pay .btn{
+    width: 120px;
+  }
+}
+@media all and (max-width: 991px) and (min-width: 768px){
+  .header-dashboard .mainmenu ul{
+    text-align: left;
+  }
+  .header-dashboard .mainmenu ul li a{
+    padding: 20px 15px;
+  }
+  .my-dashboard .ifum{
+    width: 60%;
+  }
+  .ifum .ifum-arrow{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .form-pay .pay-img{
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .form-pay .input-group{
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .form-pay .input-group-addon{
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .form-pay .btn{
+    width: 100%;
+  }
+}
+@media all and (max-width: 767px) and (min-width: 200px){
+  .my-dashboard .ifum{
+    width: 100%;
+    display: block;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .ifum .ifum-link{
+    width: 100%;
+    display: block;
+  }
+  .ifum .ifum-link img{
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .ifum .ifum-group{
+    width: auto;
+  }
+  .ifum .ifum-arrow{
+    display: none;
+  }
+  .my-dashboard .form-pay{
+    width: 100%;
+    display: block;
+  }
+  .form-pay .input-group{
+    margin-right: 0;
+  }
+  .form-pay .pay-img{
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .form-pay .form-pay-item{
+    padding: 10px 0 20px;
+  }
 }

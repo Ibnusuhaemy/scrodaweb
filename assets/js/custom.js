@@ -26,26 +26,26 @@ $(document).ready(function(){
 
 var ctx = document.getElementById("tokenDist").getContext('2d');
 var myChart = new Chart(ctx, {
-  type: 'pie',
+  type: 'doughnut',
   data: {
     labels: ["Bounty", "Bonus & Reserve", "Advisors & Partners",  "Project Team","Private Sale, Pre-ICO & ICO"],
     datasets: [{
     label: '# of Votes',
     data: [2.5, 2.5, 3, 10, 82],
     backgroundColor: [
-        '#5e4cb8',
-        '#9349c0',
-        '#2556a8',
-        '#e35582',
-        '#2fbcd7'
+        'rgb(0, 79, 116)',
+        'rgb(163, 226, 255)',
+        'rgb(91, 203, 255)',
+        'rgb(0, 146, 214)',
+        'rgb(36, 184, 253)'
     ],
     borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        'rgb(0, 79, 116)',
+        'rgb(163, 226, 255)',
+        'rgb(91, 203, 255)',
+        'rgb(0, 114, 167)',
+        'rgb(0, 146, 214)',
+        'rgb(36, 184, 253)'
     ],
     borderWidth: 0
     }]
@@ -59,27 +59,27 @@ var myChart = new Chart(ctx, {
 
 var ctx1 = document.getElementById("usesFund").getContext('2d');
 var myChart1 = new Chart(ctx1, {
-  type: 'pie',
+  type: 'doughnut',
   data: {
     labels: ["Legal and Financial", "Headquarters Land Development", "Partnership",  "Admins and Advisors", "Sales and Marketing", "Team, IT and Research Development"],
     datasets: [{
     label: '# of Votes',
     data: [3.5, 6, 7, 13.5, 30, 40],
     backgroundColor: [
-        '#6f1fc1',
-        '#5e4cb8',
-        '#9349c0',
-        '#2556a8',
-        '#e35582',
-        '#2fbcd7'
+        'rgb(0, 114, 167)',
+        'rgb(0, 79, 116)',
+        'rgb(163, 226, 255)',
+        'rgb(91, 203, 255)',
+        'rgb(0, 146, 214)',
+        'rgb(36, 184, 253)'
     ],
     borderColor: [
-        'rgba(255,99,132,1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
+        'rgb(36, 184, 253)',
+        'rgb(0, 146, 214)',
+        'rgb(0, 114, 167)',
+        'rgb(91, 203, 255)',
+        'rgb(163, 226, 255)',
+        'rgb(0, 79, 116)'
     ],
     borderWidth: 0
     }]
