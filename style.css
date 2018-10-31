@@ -241,7 +241,7 @@ p{
 div#sticker-sticky-wrapper {
     position: absolute;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
     -webkit-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }

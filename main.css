@@ -171,6 +171,12 @@
 	padding: 10px 20px;
 	height: 40px;
 }
+.signup-modal .checkboxes{
+  font-weight: 400;
+}
+.signup-modal .checkboxes input {
+  height: auto;
+}
 .signup-modal .btn-signup-modal{
 	background: #304ffe;
 	color: #fff;
