@@ -224,10 +224,11 @@
 	width: 300px;
 }
 #work_area #work_area_bg4 {
-	right: -40px;
+	right: 0;
 	top: 0;
 }
 #work_area #work_area_bg4 img {
+    max-width: 240px;
 }
 @media screen and (max-width: 1199px){
     #work_area #work_area_bg2{
