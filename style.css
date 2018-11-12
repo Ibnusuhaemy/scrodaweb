@@ -460,13 +460,17 @@ ul.dropdown-nav.dropdown-nav-left li a {
 .homepage-2 .mainmenu .nice-select .option {
     color: #30375f;
 }
-.mainmenu .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+.mainmenu .nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
     background-color: transparent;
     font-size: 12px;
-    color: #fff;
+    color: #304ffe;
     font-weight: 700;
 }
-.homepage-2 .mainmenu .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+.homepage-2 .mainmenu .nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
     color: #304FFE;
 }
 .nice-select.open .list {
@@ -2123,6 +2127,11 @@ img.section-logo {
 }
 .show-more-btn .more-arrow{
     animation: loadingJ 2s cubic-bezier(.17,.37,.43,.67) infinite;
+}
+.dapps-section .single-token img{
+    height: auto;
+    width: 100%;
+    max-width: 70px;
 }
 .dappscontent{
     display: none;
