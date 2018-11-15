@@ -14,7 +14,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/preloader.css" rel="stylesheet">
     <link href="assets/css/elements.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
 
@@ -166,10 +166,10 @@
                                 <li><a href="#slider-section">HOME</a></li>
                                 <li><a href="#why_scroda">WHY &amp; HOW</a></li>
                                 <li><a href="#about">ABOUT</a></li>
-                                <li><a href="#token">TOKEN</a></li>
+                                <li><a href="#tokensection">TOKEN</a></li>
                                 <li><a href="#roadmap-area">ROADMAP</a></li>
-                                <li><a href="#team_member">TEAM</a></li>
-                                <li><a href="#faq-area">FAQ</a></li>
+                                <li><a href="#teamsection">TEAM</a></li>
+                                <li><a href="#faqsection">FAQ</a></li>
                                 <li><a href="blog.html">BLOG</a></li>
                                 <li class="select-nice">
                                     <select name="nice" id="select">
@@ -523,7 +523,6 @@
                 <div class="col-xs-12 text-center">
                     <!-- <a href="#dappslist" class="show-more-btn" id="view-content"> -->
                     <button class="show-more-btn show-dapps" href="#dappslist" id="view-content">
-                        <p>Show More</p>
                         <img src="assets/img/icons/down-arrow.png" width="32" height="32" class="more-arrow">
                     </button>
 <!--                    <a class="show-more-btn show-dapps" href="#dappslist" id="view-content"><span class="ti-angle-double-down"></span> </a>-->
@@ -757,9 +756,10 @@
                     </div>
                 </div>
             </div>
+            <div id="tokensection"></div>
         </div>
     </section>
-
+    
     <section class="chart-description-area homepage-3 homepage-4 pt-25px animated wow fadeInUp" id="token" data-wow-duration="1s" data-wow-delay=".3s">
         <div class="container">
             <div class="row">
@@ -770,28 +770,28 @@
                     </div>
                 </div>
             </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="row">
-                    <h4 class="chart-heading">Token Distribution </h4>
-                    <div class=" col-md-6 col-sm-6">
-                        <div class="chart-left ">
-                            <canvas id="tokenDist" width="400" height="400"></canvas>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <h4 class="chart-heading">Token Distribution </h4>
+                        <div class=" col-md-6 col-sm-6">
+                            <div class="chart-left ">
+                                <canvas id="tokenDist" width="400" height="400"></canvas>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <div class="chart-right">
-                            <ul>
-                                <li class="chsrt-list diff-color-1">82% Private Sale, Pre-ICO and ICO</li>
-                                <li class="chsrt-list diff-color-2">10% Project Team</li>
-                                <li class="chsrt-list diff-color-3">3% Advisors and Partners</li>
-                                <li class="chsrt-list diff-color-4">2.5% Bonus and Reserve</li>
-                                <li class="chsrt-list diff-color-5">2.5% Bounty</li>
-                            </ul>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="chart-right">
+                                <ul>
+                                    <li class="chsrt-list diff-color-1">82% Private Sale, Pre-ICO and ICO</li>
+                                    <li class="chsrt-list diff-color-2">10% Project Team</li>
+                                    <li class="chsrt-list diff-color-3">3% Advisors and Partners</li>
+                                    <li class="chsrt-list diff-color-4">2.5% Bonus and Reserve</li>
+                                    <li class="chsrt-list diff-color-5">2.5% Bounty</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="row">
                         <h4 class="chart-heading mt-80px">Uses of Fund</h4>
@@ -1030,6 +1030,7 @@
                 </div>
             </div>
         </div>
+        <div id="teamsection"></div>
     </section>
     
     <section class="team-area homepage-3 homepage-4 pb-0px animated wow fadeInUp" id="team_member" data-wow-duration="1s" data-wow-delay=".3s">
@@ -1200,6 +1201,7 @@
                     </div>
                 </div>
             </div>
+            <div id="faqsection"></div>
         </div>
     </section>
     
@@ -1587,6 +1589,26 @@
             $("#view-content").show();
             //$(".dappscontent").removeClass("slideInDown");
             //$(".dappscontent").addClass("slideOutUp");
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            function changeColor(selector, colors, time) {
+                /* Params:
+                 * selector: string,
+                 * colors: array of color strings,
+                 * every: integer (in mili-seconds)
+                 */
+                var curCol = 0,
+                    timer = setInterval(function () {
+                        if (curCol === colors.length) curCol = 0;
+                        $(selector).css("background-color", colors[curCol]);
+                        curCol++;
+                    }, time);
+            }
+            $(window).load(function () {
+                changeColor(".show-dapps", ["#0d98ba", "#3350FE"], 1500);
+            });
         });
     </script>
 
