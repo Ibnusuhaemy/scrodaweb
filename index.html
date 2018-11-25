@@ -676,10 +676,8 @@
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <button class="show-more-btn hide-dapps" id="hide-content">
-                            <p>Hide All</p>
                             <img src="assets/img/icons/up-arrow.png" width="32" height="32" class="more-arrow">
                         </button>
-<!--                        <a class="show-more-btn hide-dapps" href="#dappslist" id="hide-content"><span class="ti-angle-double-up"></span> </a>-->
                     </div>
                 </div>
             </div>
@@ -1592,24 +1590,24 @@
         });
     </script>
     <script type="text/javascript">
-        jQuery(function ($) {
-            function changeColor(selector, colors, time) {
-                /* Params:
-                 * selector: string,
-                 * colors: array of color strings,
-                 * every: integer (in mili-seconds)
-                 */
-                var curCol = 0,
-                    timer = setInterval(function () {
-                        if (curCol === colors.length) curCol = 0;
-                        $(selector).css("background-color", colors[curCol]);
-                        curCol++;
-                    }, time);
-            }
-            $(window).load(function () {
-                changeColor(".show-dapps", ["#0d98ba", "#3350FE"], 1500);
-            });
-        });
+//        jQuery(function ($) {
+//            function changeColor(selector, colors, time) {
+//                /* Params:
+//                 * selector: string,
+//                 * colors: array of color strings,
+//                 * every: integer (in mili-seconds)
+//                 */
+//                var curCol = 0,
+//                    timer = setInterval(function () {
+//                        if (curCol === colors.length) curCol = 0;
+//                        $(selector).css("background-color", colors[curCol]);
+//                        curCol++;
+//                    }, time);
+//            }
+//            $(window).load(function () {
+//                changeColor(".show-dapps", ["#0d98ba", "#3350FE"], 1500);
+//            });
+//        });
     </script>
 
 </body>
