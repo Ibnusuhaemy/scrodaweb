@@ -220,9 +220,9 @@
                             <form action="#">
                                 <h5 class="user-panel-subtitle">01. Select the payment method and calculate token price</h5>
                                 <div class="gaps-1x"></div>
-                                <div class="payment-list">
+                                <div class="payment-list token-price">
                                     <div class="row">
-                                       <div class="col-md-3 col-sm-6">
+                                       <div class="token-price-item">
                                             <div class="payment-item">
                                                 <input class="payment-check" type="radio" id="payeth" name="payOption" value="tranxETH" checked>
                                                 <label for="payeth">
@@ -232,7 +232,7 @@
                                                 <span>@ 0.1 ETH</span>
                                             </div>       
                                        </div><!-- .col -->
-                                       <div class="col-md-3 col-sm-6">
+                                       <div class="token-price-item">
                                             <div class="payment-item">
                                                 <input class="payment-check" type="radio" id="paylightcoin" name="payOption" value="tranxLTC">
                                                 <label for="paylightcoin">
@@ -242,7 +242,7 @@
                                                 <span>@ 0.1 LTC</span>
                                             </div>
                                        </div><!-- .col -->
-                                       <div class="col-md-3 col-sm-6">
+                                       <div class="token-price-item">
                                            <div class="payment-item">
                                                 <input class="payment-check" type="radio" id="paybtc" name="payOption" value="tranxBTC">
                                                 <label for="paybtc">
@@ -252,12 +252,22 @@
                                                 <span>@ 0.05 BTC</span>
                                             </div>
                                        </div><!-- .col -->
-                                       <div class="col-md-3 col-sm-6">
+                                       <div class="token-price-item">
                                            <div class="payment-item">
-                                                <input class="payment-check" type="radio" id="payusd" name="payOption" value="tranxUSD">
-                                                <label for="payusd">
-                                                    <div class="payment-icon payment-icon-usd"><em class="payment-icon fas fa-credit-card"></em></div>
-                                                    <span class="payment-cur">US Dollar</span>
+                                                <input class="payment-check" type="radio" id="paymonero" name="payOption" value="tranxMON">
+                                                <label for="paymonero">
+                                                    <div class="payment-icon payment-icon-usd"><em class="payment-icon pay-custom-icon pay-monero-icon"></em></div>
+                                                    <span class="payment-cur">Monero</span>
+                                                </label>
+                                                <span>@ 0.5 USD</span>
+                                            </div>
+                                       </div><!-- .col -->
+                                       <div class="token-price-item">
+                                           <div class="payment-item">
+                                                <input class="payment-check" type="radio" id="paydash" name="payOption" value="tranxDAS">
+                                                <label for="paydash">
+                                                    <div class="payment-icon payment-icon-usd"><em class="payment-icon pay-custom-icon pay-dash-icon"></em></div>
+                                                    <span class="payment-cur">Dash</span>
                                                 </label>
                                                 <span>@ 0.5 USD</span>
                                             </div>
