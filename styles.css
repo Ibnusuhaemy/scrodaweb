@@ -1345,6 +1345,32 @@ img.slider-logo-img {
     color: #30375f;
 }
 
+.video-pop .modal-dialog{
+    width: 100%;
+    max-width: 1024px;
+}
+.video-pop .modal-content{
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+.video-pop .video-body{
+    padding: 0;
+}
+.video-pop .video-close{
+    text-shadow: none;
+    opacity: 1;
+    color: #fff;
+    background: #3350fe;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    z-index: 1000;
+}
+
 /*----------------------------------------
 7. HOMEPAGE THREE
 ------------------------------------------*/

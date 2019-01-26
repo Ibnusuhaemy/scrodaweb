@@ -60,6 +60,7 @@
           // prettyPhoto
 
         $(".mfp-iframe").prettyPhoto();
+        
 
         
          //WOW ANIMATION

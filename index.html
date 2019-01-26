@@ -196,7 +196,7 @@
             <img src="assets/img/Bg2.png" alt="" class="">
         </div>
         <div class="bg-hero-bullet">
-            <img src="assets/img/bullet1.png" alt="" class="bullet-img" id="bullet1">
+            <img src="assets/img/bullet1.png" alt="" class="bullet-img dragme" id="bullet1">
             <img src="assets/img/bullet1.png" alt="" class="bullet-img" id="bullet2">
             <img src="assets/img/bullet1.png" alt="" class="bullet-img" id="bullet3">
         </div>
@@ -368,18 +368,39 @@
                                 <div class="overlay-grad-one">
                                     <img src="assets/img/bg-shape/home-3-vedio-bg-2.png" alt="place your img" class="img-responsive center-block">
                                 </div>
-                                <div class="video-area-bg" >
-                                    <a class="mfp-iframe video-play-btn" href="https://www.youtube.com/watch?v=5SVR7x1ENm4"> </a>
+                                <div class="video-area-bg">
+                                    <a class="video-play-btn video-work" href="" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/F8LF5tb8kVk"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                
+                            
         </div>
             
     </section>
+    
+    <!-- Video pop-up -->
+    <div class="modal fade video-pop" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                -->
+                
+                <div class="modal-body video-body">
+                    <button type="button" class="close video-close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" id="embedWork" width="560" height="315" src="" frameborder="0"></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     
     <section id="crypcash-area" class="crypcash-area homepage-2 scroda-exp pt-50px pb-50px animated wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
             <div class="container">
@@ -392,7 +413,7 @@
                                         <img src="assets/img/bg-shape/home-3-vedio-bg-2.png" alt="place your img" class="img-responsive center-block">
                                     </div>
                                     <div class="video-area-bg">
-                                        <a class="mfp-iframe video-play-btn" href="https://www.youtube.com/watch?v=5SVR7x1ENm4"> </a>
+                                        <a class="video-play-btn video-work" href="" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/5SVR7x1ENm4"></a>
                                     </div>
                                 </div>
                             </div>
@@ -409,7 +430,7 @@
                 </div>
             </div>
     </section>
-
+    
     <section id="crypcash-area" class="crypcash-area homepage-2 scroda-exp scroda-id pt-50px animated wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
         <div class="id-img">
             <img src="assets/img/Picture1.png" alt="">
@@ -448,7 +469,7 @@
                                     <img src="assets/img/bg-shape/home-3-vedio-bg-2.png" alt="place your img" class="img-responsive center-block">
                                 </div>
                                 <div class="video-area-bg">
-                                    <a class="mfp-iframe video-play-btn" href="https://www.youtube.com/watch?v=5SVR7x1ENm4"> </a>
+                                    <a class="video-play-btn video-work" href="" data-toggle="modal" data-target="#videoModal" data-theVideo="https://www.youtube.com/embed/yl2GaxVGUaI"></a>
                                 </div>
                             </div>
                         </div>
@@ -1566,7 +1587,6 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/preloader.js"></script> -->
     <script src="assets/js/theme.plugins.js"></script>
     <script src="assets/js/ajax-mail.js"></script>
     <script src="assets/js/ajax-subscribe.js"></script>
@@ -1578,15 +1598,10 @@
         $("#view-content").on("click", function(){
             $(this).hide();
             $(".dappscontent").show(500);
-            //$(".dappscontent").addClass("slideInDown");
-            //$(".dappscontent").removeClass("slideOutUp");
-            //$("#hide-content").show();
         });
         $("#hide-content").on("click", function(){
             $(".dappscontent").hide(500);
             $("#view-content").show();
-            //$(".dappscontent").removeClass("slideInDown");
-            //$(".dappscontent").addClass("slideOutUp");
         });
     </script>
     <script type="text/javascript">
@@ -1608,6 +1623,100 @@
 //                changeColor(".show-dapps", ["#0d98ba", "#3350FE"], 1500);
 //            });
 //        });
+    </script>
+    <script type="text/javascript">
+        
+        autoPlayYouTubeModal();
+
+        //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
+        function autoPlayYouTubeModal() {
+            var trigger = $("body").find('[data-toggle="modal"]');
+            var backdrop = $(".video-pop");
+            trigger.click(function () {
+                
+                var theModal = $(this).data("target"),
+                videoSRC = $(this).attr("data-theVideo"),
+                videoSRCauto = videoSRC + "?autoplay=1";
+                
+                $(theModal + ' iframe').attr('src', videoSRCauto);
+                
+                $(theModal + ' button.close').click(function () {
+                    $(theModal + ' iframe').attr('src', videoSRC);
+                });
+                
+                $(backdrop).click(function () {
+                    $(theModal + ' iframe').attr('src', videoSRC);
+                });
+                
+            });
+        }
+        
+    </script>
+    
+    <script type="text/javascript">
+        
+        //$(document).mousemove(function(e) {
+//            $('#bullet1').offset({
+//                left: e.pageX,
+//                top: e.pageY + 20
+//            });
+        //});
+        
+//        var $dragging = null;
+//        
+//        $(document.body).on("mousemove", function(e) {
+//            if ($dragging) {
+//                $dragging.offset({
+//                    top: e.pageY,
+//                    left: e.pageX
+//                });
+//            }
+//        });
+//
+//        $(document.body).on("mousedown", ".dragme", function (e) {
+//            $dragging = $(e.target);
+//        });
+//
+//        $(document.body).on("mouseup", function (e) {
+//            $dragging = null;
+//        });
+        
+      $(".hero-slide").click(function(){
+        var dest = parseInt($("#bullet1").css("margin-left").replace("px", "")) + 100;
+          if (dest > 500) {
+              $("#bullet1").animate({
+                  marginLeft: "10px"
+                }, 500 );
+          }
+          else {
+            $("#bullet1").animate({
+              marginLeft: dest + "px"
+            }, 500 );
+          }
+        var dest2 = parseInt($("#bullet2").css("margin-left").replace("px", "")) + 100;
+          if (dest2 > 500) {
+              $("#bullet2").animate({
+                  marginLeft: "10px"
+                }, 500 );
+          }
+          else {
+            $("#bullet2").animate({
+              marginLeft: dest2 + "px"
+            }, 500 );
+          }
+        var dest3 = parseInt($("#bullet3").css("margin-left").replace("px", "")) + 100;
+          if (dest3 > 500) {
+              $("#bullet3").animate({
+                  marginLeft: "10px"
+                }, 500 );
+          }
+          else {
+            $("#bullet3").animate({
+              marginLeft: dest3 + "px"
+            }, 500 );
+          }
+      });
+        
     </script>
 
 </body>
