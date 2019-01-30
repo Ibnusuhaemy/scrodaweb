@@ -1102,7 +1102,7 @@
     background: transparent;
     padding: 15px 0;
     min-height: 50px;
-    z-index: 99999;
+    z-index: 1000;
 }
 .mean-container .mean-nav ul li a.mean-expand {
     width: 17px;
